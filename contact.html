@@ -3,13 +3,25 @@
     <form hx-post="contact.html" hx-trigger="submit">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
-        
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="rooms">Number of Classrooms/Rooms:</label>
+        <input type="number" id="rooms" name="rooms" required>
+
+        <label for="bathrooms">Number of Bathrooms:</label>
+        <input type="number" id="bathrooms" name="bathrooms" required>
+
+        <label for="facility-description">Description of Facility:</label>
+        <textarea id="facility-description" name="facility-description" required></textarea>
+
+        <label for="message">Brief Message:</label>
         <textarea id="message" name="message" required></textarea>
-        
+
         <button type="submit">Send</button>
     </form>
 </section>
