@@ -3,46 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Commercial Cleaning</title>
+    <title>Just Right Commercial Cleaning</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>Just Commercial Cleaning</h1>
+        <h1>Just Right Commercial Cleaning</h1>
         <nav>
             <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" hx-get="about.html" hx-target="#main-content">About Us</a></li>
+                <li><a href="#services" hx-get="services.html" hx-target="#main-content">Services</a></li>
+                <li><a href="#contact" hx-get="contact.html" hx-target="#main-content">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section id="services">
-            <h2>Our Services</h2>
-            <div hx-get="services.html" hx-trigger="load"></div>
-        </section>
-        
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a professional commercial cleaning company dedicated to keeping your business spotless.</p>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form hx-post="contact.html" hx-trigger="submit">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
+        <section id="main-content">
+            <h2>Just Right Commercial Cleaning</h2>
+            <p>We are a professional commercial cleaning company specializing in schools, daycares, 
+                and other facilities in southeastern PA and NJ. Our team is dedicated to providing 
+                top-quality cleaning services to ensure a spotless and hygienic environment for your 
+                business.</p>
         </section>
     </main>
     
