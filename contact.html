@@ -1,4 +1,52 @@
-<section id="contact">
+
+
+<section id="main-content">
+    <head>
+        <style>
+            #main-content form {
+                padding: 2em;
+                margin: 1em 0;
+                background-color: white;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        
+            #main-content form label {
+                font-weight: bold;
+                margin-top: 1em;
+                display: block;
+            }
+        
+            #main-content form input,
+            #main-content form textarea {
+                padding: 0.75em;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 100%;
+                margin-bottom: 1em; /* Adds margin below each input and textarea */
+            }
+        
+            #main-content form textarea {
+                resize: vertical;
+            }
+        
+            #main-content form button {
+                padding: 0.75em;
+                background-color: #002244; /* Darker navy blue */
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 1em; /* Adds margin above the button */
+                margin-bottom: 1em; /* Adds margin below the button */
+            }
+        
+            #main-content form button:hover {
+                background-color: #00152e; /* Darker navy blue hover */
+            }
+        </style>
+        
+    </head>
     <h2>Contact Us</h2>
     <form action="tests/test_post.php" method="POST">
         <label for="name">Name:</label>
@@ -25,3 +73,4 @@
         <button type="submit">Send</button>
     </form>
 </section>
+

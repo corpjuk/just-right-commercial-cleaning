@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <h1>Just Right Commercial Cleaning</h1>
+        <h1 onclick="loadLandingPage()"><span>Just Right</span> Commercial Cleaning</h1>
+        <p class="tagline">Proudly Serving Bucks County and Surrounding Areas</p>
         <nav>
             <ul>
                 <li><a href="#about" hx-get="about.html" hx-target="#main-content">About Us</a></li>
@@ -21,11 +22,35 @@
     
     <main>
         <section id="main-content">
-            <h2>Just Right Commercial Cleaning</h2>
-            <p>We are a professional commercial cleaning company specializing in schools, daycares, 
-                and other facilities in southeastern PA and NJ. Our team is dedicated to providing 
-                top-quality cleaning services to ensure a spotless and hygienic environment for your 
-                business.</p>
+            <h2>Welcome to Just Right Commercial Cleaning</h2>
+            <p>Welcome to <span>Just Right Commercial Cleaning</span>, your trusted partner for professional cleaning services. We specialize in providing top-quality cleaning solutions for commercial spaces, including schools, daycares, offices, and other facilities. Our dedicated team is committed to ensuring a spotless and hygienic environment for your business.</p>
+            
+            <h3>Where We Serve</h3>
+            <p>We are proud to serve Bucks County and the surrounding areas, including southeastern Pennsylvania and parts of New Jersey. Our local knowledge and experience enable us to deliver customized cleaning services that meet the unique needs of businesses in these regions.</p>
+            
+            <h3>What We Do</h3>
+            <p>At <span>Just Right Commercial Cleaning</span>, we offer a comprehensive range of cleaning services designed to keep your facilities clean and safe. Our services include:</p>
+            <ul>
+                <li>Daily and weekly cleaning schedules</li>
+                <li>Deep cleaning and sanitization</li>
+                <li>Carpet and upholstery cleaning</li>
+                <li>Floor care and maintenance</li>
+                <li>Window cleaning</li>
+                <li>Restroom sanitation</li>
+                <li>Trash removal and recycling</li>
+            </ul>
+            <p>We understand that every business is unique, which is why we tailor our cleaning services to fit your specific requirements. Whether you need regular maintenance or one-time deep cleaning, our team is here to help.</p>
+            
+            <h3>Why Choose Us?</h3>
+            <p>Choosing <span>Just Right Commercial Cleaning</span> means you are opting for reliability, professionalism, and attention to detail. Here are some reasons why our clients trust us:</p>
+            <ul>
+                <li>Experienced and trained cleaning professionals</li>
+                <li>Use of eco-friendly and safe cleaning products</li>
+                <li>Customized cleaning plans to suit your needs</li>
+                <li>Competitive pricing</li>
+                <li>Commitment to customer satisfaction</li>
+            </ul>
+            <p>Contact us today to learn more about how we can help maintain a clean and healthy environment for your business.</p>
         </section>
     </main>
     
@@ -36,5 +61,40 @@
     
     <script src="https://unpkg.com/htmx.org@1.6.1"></script>
     <script src="scripts/main.js"></script>
+    <script>
+        function loadLandingPage() {
+            document.getElementById('main-content').innerHTML = `
+                <h2>Welcome to Just Right Commercial Cleaning</h2>
+                <p>Welcome to <span>Just Right Commercial Cleaning</span>, your trusted partner for professional cleaning services. We specialize in providing top-quality cleaning solutions for commercial spaces, including schools, daycares, offices, and other facilities. Our dedicated team is committed to ensuring a spotless and hygienic environment for your business.</p>
+                
+                <h3>Where We Serve</h3>
+                <p>We are proud to serve Bucks County and the surrounding areas, including southeastern Pennsylvania and parts of New Jersey. Our local knowledge and experience enable us to deliver customized cleaning services that meet the unique needs of businesses in these regions.</p>
+                
+                <h3>What We Do</h3>
+                <p>At <span>Just Right Commercial Cleaning</span>, we offer a comprehensive range of cleaning services designed to keep your facilities clean and safe. Our services include:</p>
+                <ul>
+                    <li>Daily and weekly cleaning schedules</li>
+                    <li>Deep cleaning and sanitization</li>
+                    <li>Carpet and upholstery cleaning</li>
+                    <li>Floor care and maintenance</li>
+                    <li>Window cleaning</li>
+                    <li>Restroom sanitation</li>
+                    <li>Trash removal and recycling</li>
+                </ul>
+                <p>We understand that every business is unique, which is why we tailor our cleaning services to fit your specific requirements. Whether you need regular maintenance or one-time deep cleaning, our team is here to help.</p>
+                
+                <h3>Why Choose Us?</h3>
+                <p>Choosing <span>Just Right Commercial Cleaning</span> means you are opting for reliability, professionalism, and attention to detail. Here are some reasons why our clients trust us:</p>
+                <ul>
+                    <li>Experienced and trained cleaning professionals</li>
+                    <li>Use of eco-friendly and safe cleaning products</li>
+                    <li>Customized cleaning plans to suit your needs</li>
+                    <li>Competitive pricing</li>
+                    <li>Commitment to customer satisfaction</li>
+                </ul>
+                <p>Contact us today to learn more about how we can help maintain a clean and healthy environment for your business.</p>
+            `;
+        }
+    </script>
 </body>
 </html>
